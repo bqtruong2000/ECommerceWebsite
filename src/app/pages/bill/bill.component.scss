@@ -1,0 +1,111 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.contain {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  width: 150px;
+  height: 70vh;
+  border: solid;
+  margin: 50px 0 0 30px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 10px;
+  border-color: azure;
+}
+
+.main-content {
+  width: 80%;
+  height: 80vh;
+  margin: 30px 30px 0 50px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 10px;
+  border-color: azure;
+}
+
+.example-card {
+  width: 220px;
+  margin: 20px 10px 10px 20px;
+  padding: auto;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.main-content > p {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.like-button,
+.buy-button {
+  font-style: bold;
+  background-color: #ffd740;
+  margin: 10px 0px 5px 25px;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+
+.item-price {
+  color: #ffd740;
+  text-align: center;
+  font-style: 5px bold;
+  font-size: large;
+}
+
+.item-status {
+  text-align: right;
+  font-style: 1px bold;
+  margin-right: 10px;
+}
+.item-title {
+  text-align: justify;
+  font-style: 5px bold;
+  font-size: large;
+  justify-content: justify;
+  justify-items: justify;
+}
+
+.Info {
+  margin: 40px 10px 10px 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 20px solid;
+  transition: 0.5s;
+}
+
+.Info:hover {
+  font-size: large;
+  transition: 0.5s;
+}
+
+.example-card:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.countFavorite {
+  border: 1px black;
+  background-color: #ffd740;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  text-align: center;
+}
+
+#fav {
+  display: flex;
+  flex-direction: row;
+}

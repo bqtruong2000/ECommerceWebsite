@@ -1,15 +1,10 @@
-import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-items',
-  templateUrl: './items.component.html',
-  styleUrls: ['./items.component.scss'],
+@Injectable({
+  providedIn: 'root',
 })
-export class ItemsComponent {
+export class MyServiceService {
   count = 0;
-  increase() {
-    this.count++;
-  }
   item_arr = [
     {
       id: '784fc7e2-7dfc-4bd1-8d39-63880944e3d9',
@@ -92,4 +87,13 @@ export class ItemsComponent {
       price: '55.000 ~ 99.000 VNĐ',
     },
   ];
+
+  increase() {
+    this.count++;
+    return this.count;
+  }
+
+  getID(item: any) {
+    return item;
+  }
 }

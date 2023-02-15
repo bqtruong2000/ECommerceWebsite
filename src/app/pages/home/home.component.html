@@ -1,3 +1,4 @@
+<app-title></app-title>
 <div class="contain">
   <div class="sidebar">
     <p class="Info">My Account</p>
@@ -26,7 +27,9 @@
           <button mat-button class="like-button" (click)="increase()">
             LIKE
           </button>
-          <button mat-button class="buy-button">BUY</button>
+          <button mat-button class="buy-button" (click)="getID(item)">
+            BUY
+          </button>
         </mat-card-actions>
         <p class="item-status">{{ item.status }}</p>
       </mat-card>
